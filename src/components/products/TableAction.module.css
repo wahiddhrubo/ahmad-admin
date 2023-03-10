@@ -1,0 +1,47 @@
+.icon {
+	color: #6b7280;
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
+	padding-left: 0.75rem;
+	padding-right: 0.75rem;
+	cursor: pointer;
+}
+
+.hide {
+	display: none;
+}
+
+.links {
+	cursor: pointer;
+	font-size: 0.875rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	font-weight: normal;
+	display: block;
+	width: fit-content;
+	white-space: nowrap;
+	background-color: transparent;
+	color: #6b7280;
+}
+
+.warning {
+	color: darkred;
+}
+
+.container {
+	background-color: #fff;
+	font-size: 1rem;
+	z-index: 50;
+	float: left;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	list-style: none;
+	text-align: left;
+	border-radius: 0.5rem;
+	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+	min-width: 12rem;
+	position: absolute;
+	right: 5%;
+}

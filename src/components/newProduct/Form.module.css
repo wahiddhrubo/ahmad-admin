@@ -1,0 +1,160 @@
+.wrapper {
+	background-color: #f6f6f6;
+}
+
+.featuredImage {
+	position: relative;
+	padding: 16px;
+	text-align: center;
+}
+
+.flexbox {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	gap: 10%;
+}
+
+.form {
+	width: 65%;
+}
+.inputFlexbox {
+	display: flex;
+	flex-wrap: wrap;
+	width: 80%;
+	gap: 20%;
+}
+
+.intro > * {
+	margin-top: 1.25rem;
+}
+.intro {
+	padding-top: 2.5rem;
+	padding-bottom: 2.5rem;
+	border-radius: 10px;
+}
+
+.input {
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	background-color: transparent;
+	width: 100%;
+	border-width: 2px;
+	border-color: #000000;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.input::placeholder {
+	color: #000000;
+	text-transform: capitalize;
+}
+.inputTitle {
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.inputDiv {
+	width: 100%;
+}
+.inputDivHalf {
+	width: 40%;
+	margin: 10px 0;
+}
+.galleryInputFile {
+	color: #2563eb;
+	cursor: pointer;
+}
+.galleryBtn {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	height: 100%;
+
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.galleryPreview {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2.5rem;
+}
+.previewGallery {
+	width: 150px;
+}
+
+.sideBar {
+	width: 25%;
+}
+
+.inputContainer {
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	padding-top: 2.5rem;
+	padding-bottom: 2.5rem;
+	margin-top: 48px;
+	margin-bottom: 48px;
+	background-color: #ffffff;
+	border-radius: 10px;
+}
+.select {
+	display: block;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	width: 100%;
+	cursor: pointer;
+}
+
+.select::focus-visible {
+	outline: none;
+}
+.chip {
+	padding-top: 6px;
+	padding-bottom: 6px;
+	display: inline-block;
+	position: relative;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	margin-right: 0.5rem;
+	background: #f6f6f6;
+}
+.close {
+	position: absolute;
+	right: 0.25rem;
+	cursor: pointer;
+	top: -6px;
+}
+.submit {
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	background-color: #60a5fa;
+	color: #ffffff;
+	text-align: center;
+	width: 100%;
+	border-radius: 10px;
+	cursor: pointer;
+	margin: 2rem auto;
+}
+
+@media (max-width: 640px) {
+	.flexbox {
+		display: block;
+	}
+	.form {
+		width: 100%;
+	}
+	.sideBar {
+		width: 100%;
+	}
+	.inputDivHalf {
+		width: 100%;
+		margin: 20px 0;
+	}
+	.inputFlexbox {
+		display: block;
+	}
+}
