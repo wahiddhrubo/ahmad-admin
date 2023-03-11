@@ -37,9 +37,6 @@ export default function NotificationDropdown({ id }) {
         style={{ display: dropdownPopoverShow ? "block" : "none" }}
       >
         <a className={styles.links + " "} onClick={(e) => e.preventDefault()}>
-          Update
-        </a>
-        <a className={styles.links + " "} onClick={(e) => e.preventDefault()}>
           Preview
         </a>
         <a
