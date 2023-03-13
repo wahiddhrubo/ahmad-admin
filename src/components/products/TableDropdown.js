@@ -36,7 +36,12 @@ export default function NotificationDropdown({ id }) {
         className={styles.container}
         style={{ display: dropdownPopoverShow ? "block" : "none" }}
       >
-        <a className={styles.links + " "} onClick={(e) => e.preventDefault()}>
+        <a
+          className={styles.links + " "}
+          href={`${process.env.REACT_APP_FRONTEND_SERVER_PRODUCT}/${id}`}
+          target="_blank"
+          onClick={(e) => e.preventDefault()}
+        >
           Preview
         </a>
         <a

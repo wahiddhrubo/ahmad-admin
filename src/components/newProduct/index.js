@@ -53,7 +53,7 @@ export default function Form({ history }) {
 		Name: name,
 		Description: description,
 		Price: price,
-		"Discounted Price": discountedPrice,
+
 		Stock: stock,
 		Gallery: gallery,
 		FeaturedImage: featuredImage,
