@@ -2,7 +2,8 @@ import { useState, useRef } from "react";
 import styles from "./TableAction.module.css";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { useDispatch } from "react-redux";
-import { deleteProduct } from "../../actions/products";
+
+import { deleteProduct } from "../../store/slice/product.js";
 
 export default function NotificationDropdown({ id }) {
   const dispatch = useDispatch();

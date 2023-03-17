@@ -12,8 +12,7 @@ import { checkEmptyField } from "../../utils/formvalidation.js";
 import Alert from "../layout/alert.js";
 
 import { useSelector, useDispatch } from "react-redux";
-import { clearErrors, createProduct } from "../../actions/products";
-import { NEW_PRODUCT_RESET } from "../../constants/products.js";
+import { createProduct } from "../../store/slice/product.js";
 
 import "react-quill/dist/quill.snow.css";
 import styles from "./Form.module.css";
@@ -29,7 +28,7 @@ export default function Form({ history }) {
 	};
 
 	const { loading, success, error, product } = useSelector(
-		(state) => state.newProduct
+		(state) => state.product
 	);
 
 	const categoriesOpt = ["Option 1", "Option 2", "Option 3"];
@@ -53,7 +52,6 @@ export default function Form({ history }) {
 		Name: name,
 		Description: description,
 		Price: price,
-
 		Stock: stock,
 		Gallery: gallery,
 		FeaturedImage: featuredImage,
@@ -96,7 +94,6 @@ export default function Form({ history }) {
 			setAlertType(alerts.success);
 			setAlertMessage("Product Created Successfully");
 			navigate("/");
-			dispatch({ type: NEW_PRODUCT_RESET });
 		}
 	}, [success, error, history, dispatch]);
 

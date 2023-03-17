@@ -5,11 +5,7 @@ import TableDropdown from "./TableDropdown.js";
 import Alert from "../layout/alert.js";
 
 import { useSelector, useDispatch } from "react-redux";
-import {
-	getAllProduct,
-	deleteProduct,
-	productReducer,
-} from "../../actions/products";
+import { getAllProducts } from "../../store/slice/getProducts.js";
 
 import { DELETE_PRODUCT_RESET } from "../../constants/products.js";
 
@@ -37,8 +33,8 @@ export default function Products({ history }) {
 		resultPerPage,
 		totalPages,
 		error,
-	} = useSelector((state) => state.allProducts);
-	const { isDeleted } = useSelector((state) => state.productReducer);
+	} = useSelector((state) => state.getProducts);
+	const { isDeleted } = useSelector((state) => state.product);
 
 	useEffect(() => {
 		const page = searchParams.get("page") || 1;
@@ -47,7 +43,7 @@ export default function Products({ history }) {
 
 		const fetchDta = async () => {
 			dispatch(
-				getAllProduct({
+				getAllProducts({
 					page: page,
 					resultPerPage: limit,
 					keyword: keyword,
